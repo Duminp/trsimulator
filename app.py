@@ -4,15 +4,19 @@ import random
 import plotly.express as px
 
 # --- PAGE CONFIGURATION ---
-st.set_page_config(page_title="Strategy Simulator v5", layout="wide", page_icon="📉")
+st.set_page_config(page_title="Strategy Simulator", layout="wide", page_icon="📉")
 
 # --- CSS STYLING ---
 st.markdown("""
 <style>
     .metric-card { background-color: #f0f2f6; border-radius: 10px; padding: 15px; text-align: center; }
+    /* Primary Button Style */
+    .stButton>button[kind="primary"] {
+        background-color: #FF4B4B;
+        color: white;
+        border: none;
+    }
     .stButton>button { width: 100%; font-weight: bold; }
-    .success-text { color: green; font-weight: bold; }
-    .fail-text { color: red; font-weight: bold; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -30,51 +34,7 @@ if 'history_months' not in st.session_state:
 if 'global_trade_counter' not in st.session_state:
     st.session_state.global_trade_counter = 0
 
-# --- SIDEBAR: SETTINGS ---
-with st.sidebar:
-    st.markdown("---")
-    st.header("⚙️ Settings")
-    st.markdown("---")
-    # 1. MODE SELECTION
-    st.subheader("1. Execution Mode")
-    exec_mode = st.radio("Choose Mode:", ["⚡ Run All (Batch)", "👣 Manual Step-by-Step"])
-
-    st.markdown("---")
-    # 2. CAPITAL & RISK
-    st.subheader("2. Capital & Risk")
-    # We use a key here to ensure we can access it reliably in session state if needed
-    initial_capital = st.number_input("Starting Capital ($)", value=10000.0, step=100.0, key="widget_initial_capital")
-    
-    risk_percent_input = st.slider("Risk per Trade (%)", min_value=1.0, max_value=20.0, value=10.0, step=0.5)
-    risk_percent = risk_percent_input / 100.0
-    
-    st.markdown("---")
-    # 3. STRATEGY SPECS
-    st.subheader("3. Strategy Specs")
-    win_rate_input = st.slider("Win Rate (%)", min_value=10, max_value=99, value=80, step=1)
-    win_rate = win_rate_input / 100.0
-    trades_per_month = st.number_input("Trades per Month", min_value=1, value=16)
-    
-    st.markdown("---")
-    # 4. DURATION
-    st.subheader("4. Duration")
-    months_to_simulate = st.slider("Total Duration (Months)", min_value=1, max_value=24, value=6)
-
-    # 5. RESET BUTTON (For Manual Mode)
-    if exec_mode == "👣 Manual Step-by-Step":
-        st.markdown("---")
-        if st.button("🔄 Reset / New Simulation"):
-            # RESET LOGIC: Explicitly grab the current widget value
-            st.session_state.manual_started = False
-            st.session_state.history_trades = []
-            st.session_state.history_months = []
-            st.session_state.month_counter = 0
-            st.session_state.global_trade_counter = 0
-            # Force update capital from the sidebar input
-            st.session_state.current_capital = initial_capital 
-            st.rerun()
-
-# --- CORE SIMULATION FUNCTION ---
+# --- CORE SIMULATION FUNCTION (Defined at Top) ---
 def run_single_month(start_cap, month_num, trade_count_start, trades_qty, win_prob, risk_pct, withdrawal_amt):
     curr_cap = start_cap
     month_trades = []
@@ -83,7 +43,7 @@ def run_single_month(start_cap, month_num, trade_count_start, trades_qty, win_pr
     consecutive_losses = 0
     failed_trades = []
 
-    # Instant fail check
+    # Immediate fail check
     if curr_cap <= 0:
         return curr_cap, [], {
             "Month": month_num, "Start Balance": 0, "End Balance": 0, "Withdrawn": 0, 
@@ -93,6 +53,7 @@ def run_single_month(start_cap, month_num, trade_count_start, trades_qty, win_pr
     for t in range(1, trades_qty + 1):
         trade_id = trade_count_start + t
         
+        # Streak Breaker Logic
         if consecutive_losses >= 2:
             is_win = True
             note = "Streak Breaker"
@@ -127,6 +88,7 @@ def run_single_month(start_cap, month_num, trade_count_start, trades_qty, win_pr
             "Note": note
         })
 
+    # Withdrawal Logic
     pre_withdraw_cap = curr_cap
     actual_withdraw = 0
     if curr_cap > withdrawal_amt:
@@ -147,21 +109,96 @@ def run_single_month(start_cap, month_num, trade_count_start, trades_qty, win_pr
     
     return curr_cap, month_trades, month_summary
 
-# --- APP LAYOUT ---
+# --- SIDEBAR: SETTINGS ---
+with st.sidebar:
+    st.header("⚙️ Simulator Controls")
+    
+    # 1. MODE SELECTION
+    # We use simple indices to avoid string matching errors
+    MODE_BATCH = "⚡ Run All (Batch)"
+    MODE_MANUAL = "👣 Manual Step-by-Step"
+    
+    exec_mode = st.radio("Execution Mode:", [MODE_BATCH, MODE_MANUAL])
+    
+    # 2. RESET BUTTON (Top of Sidebar)
+    if exec_mode == MODE_MANUAL:
+        # Only active if game started
+        btn_type = "primary" if st.session_state.manual_started else "secondary"
+        btn_disabled = not st.session_state.manual_started
+        
+        # Use primary red button if active, otherwise disabled grey
+        if st.session_state.manual_started:
+            if st.button("🔄 RESET SIMULATION", type="primary"):
+                st.session_state.manual_started = False
+                st.session_state.history_trades = []
+                st.session_state.history_months = []
+                st.session_state.month_counter = 0
+                st.session_state.global_trade_counter = 0
+                st.rerun()
+        else:
+            st.button("🔄 RESET SIMULATION", disabled=True)
+            
+        st.divider()
 
-st.title("📉 Trading Simulator v5")
+    # Determine if inputs should be disabled (Locked during manual play)
+    inputs_disabled = st.session_state.manual_started
+
+    # 3. SETTINGS INPUTS
+    with st.expander("💰 Capital & Risk", expanded=True):
+        initial_capital = st.number_input(
+            "Starting Capital ($)", 
+            value=10000.0, step=100.0, key="widget_initial_capital", disabled=inputs_disabled
+        )
+        risk_percent_input = st.slider(
+            "Risk per Trade (%)", 
+            min_value=1.0, max_value=20.0, value=10.0, step=0.5, disabled=inputs_disabled
+        )
+        risk_percent = risk_percent_input / 100.0
+
+    with st.expander("📊 Strategy Specs", expanded=False):
+        win_rate_input = st.slider(
+            "Win Rate (%)", 
+            min_value=10, max_value=99, value=80, step=1, disabled=inputs_disabled
+        )
+        win_rate = win_rate_input / 100.0
+        
+        trades_per_month = st.number_input(
+            "Trades per Month", 
+            min_value=1, value=16, disabled=inputs_disabled
+        )
+
+    with st.expander("⏳ Duration", expanded=False):
+        months_to_simulate = st.slider(
+            "Total Months", 
+            min_value=1, max_value=24, value=6, disabled=inputs_disabled
+        )
+
+    # Force reset if user switches modes while playing
+    if exec_mode == MODE_BATCH and st.session_state.manual_started:
+        st.session_state.manual_started = False
+        st.rerun()
+
+# --- MAIN PAGE LAYOUT ---
+# IMPORTANT: This indentation must be FLUSH LEFT (Not inside sidebar)
+
+st.title("📉 Trading Simulator")
 st.markdown(f"**Config:** {win_rate*100:.0f}% WR | {trades_per_month} Trades/Mo | **{risk_percent*100:.1f}% Risk**")
 
 # ==========================================
-# MODE 1: BATCH RUN
+# LOGIC FOR BATCH RUN
 # ==========================================
-if exec_mode == "⚡ Run All (Batch)":
+if exec_mode == MODE_BATCH:
     
     st.info("👇 **Pre-configure your monthly withdrawals:**")
+    
+    # Creates columns for inputs
     cols = st.columns(min(months_to_simulate, 4))
     monthly_withdrawals = []
+    
+    # Safe loop for inputs
     for i in range(months_to_simulate):
-        with cols[i % 4]:
+        col_idx = i % 4
+        with cols[col_idx]:
             w = st.number_input(f"Month {i+1} ($)", value=3000.0, step=500.0, key=f"batch_w_{i}")
             monthly_withdrawals.append(w)
 
@@ -179,37 +216,37 @@ if exec_mode == "⚡ Run All (Batch)":
             glob_count += len(m_trades)
             if curr <= 0: break
 
-        # Results Display
+        # Show Results
         df_m = pd.DataFrame(all_months)
         df_t = pd.DataFrame(all_trades)
         
-        final_cap = df_m.iloc[-1]['Remaining'] if not df_m.empty else 0
-        tot_wd = df_m['Withdrawn'].sum() if not df_m.empty else 0
-        net = (final_cap + tot_wd) - initial_capital
-        
-        c1, c2, c3 = st.columns(3)
-        c1.metric("Final Capital", f"${final_cap:,.2f}")
-        c2.metric("Total Withdrawn", f"${tot_wd:,.2f}")
-        c3.metric("Net Profit", f"${net:,.2f}", delta=f"{(net/initial_capital)*100:.1f}%")
-        
-        st.divider()
-        st.subheader("Monthly Breakdown")
-        st.dataframe(df_m.style.format({"Start Balance":"${:,.2f}", "End Balance":"${:,.2f}", "Withdrawn":"${:,.2f}", "Remaining":"${:,.2f}"}), use_container_width=True)
-        
-        if not df_t.empty:
+        if not df_m.empty:
+            final_cap = df_m.iloc[-1]['Remaining']
+            tot_wd = df_m['Withdrawn'].sum()
+            net = (final_cap + tot_wd) - initial_capital
+            
+            c1, c2, c3 = st.columns(3)
+            c1.metric("Final Capital", f"${final_cap:,.2f}")
+            c2.metric("Total Withdrawn", f"${tot_wd:,.2f}")
+            c3.metric("Net Profit", f"${net:,.2f}", delta=f"{(net/initial_capital)*100:.1f}%")
+            
+            st.divider()
+            st.subheader("Monthly Breakdown")
+            st.dataframe(df_m.style.format({"Start Balance":"${:,.2f}", "End Balance":"${:,.2f}", "Withdrawn":"${:,.2f}", "Remaining":"${:,.2f}"}), use_container_width=True)
+            
             st.subheader("Equity Curve")
             st.plotly_chart(px.line(df_t, x="Global Trade", y="Balance"), use_container_width=True)
 
 # ==========================================
-# MODE 2: MANUAL STEP-BY-STEP
+# LOGIC FOR MANUAL RUN
 # ==========================================
 else:
-    # 1. Start Button
+    # 1. Start Screen
     if not st.session_state.manual_started:
         st.info("👋 Ready to start? Confirm Capital in sidebar and click below.")
-        if st.button("🏁 Start Manual Simulation"):
-            st.session_state.manual_started = True
-            # FIX: Explicitly grab sidebar value here
+        
+        if st.button("🏁 Start Manual Simulation", type="primary"):
+            st.session_state.manual_started = True 
             st.session_state.current_capital = initial_capital 
             st.session_state.month_counter = 0
             st.session_state.global_trade_counter = 0
@@ -217,9 +254,8 @@ else:
             st.session_state.history_months = []
             st.rerun()
     
-    # 2. Game Loop
+    # 2. Active Game Screen
     else:
-        # Check Game Over / Victory Conditions
         game_over = st.session_state.current_capital <= 0
         victory = st.session_state.month_counter >= months_to_simulate
         
@@ -229,11 +265,10 @@ else:
             st.success("✅ Simulation Period Complete! Well done.")
             st.balloons()
         
-        # 3. Active Controls (Only show if game is NOT over)
+        # Action Panel (Only if game active)
         if not game_over and not victory:
             next_month = st.session_state.month_counter + 1
             
-            # Layout: Controls on Top
             st.markdown(f"### 🗓️ Execute Month {next_month}")
             
             c1, c2, c3 = st.columns([1, 1, 1])
@@ -242,8 +277,8 @@ else:
             with c2:
                 step_withdraw = st.number_input(f"Withdrawal for Month {next_month} ($)", value=3000.0, step=100.0, key=f"step_w_{next_month}")
             with c3:
-                st.write("") # Spacer
-                st.write("") # Spacer
+                st.write("") 
+                st.write("") 
                 if st.button(f"▶️ Run Month {next_month}", type="primary"):
                     new_cap, m_trades, m_sum = run_single_month(
                         st.session_state.current_capital, 
@@ -262,18 +297,16 @@ else:
                     st.session_state.history_months.append(m_sum)
                     st.rerun()
 
-        # 4. PERSISTENT DATA TABLE (Shows regardless of game state)
+        # History Table (Always Visible)
         st.divider()
         st.subheader("📊 Simulation History")
         
         if st.session_state.history_months:
             df_m_live = pd.DataFrame(st.session_state.history_months)
             
-            # Calc Totals
             tot_wd = df_m_live['Withdrawn'].sum()
             curr_bal = st.session_state.current_capital
             
-            # Mini Metrics
             m1, m2, m3 = st.columns(3)
             m1.metric("Remaining Capital", f"${curr_bal:,.2f}")
             m2.metric("Total Withdrawn", f"${tot_wd:,.2f}")
@@ -286,7 +319,6 @@ else:
         else:
             st.caption("No months simulated yet. Click Start above.")
 
-        # 5. PERSISTENT CHART
         if st.session_state.history_trades:
             st.divider()
             df_t_live = pd.DataFrame(st.session_state.history_trades)
