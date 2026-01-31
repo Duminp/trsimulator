@@ -143,7 +143,7 @@ else:
         (df_filtered['TIME'].isin(sel_times))
     ].copy()
     
-    st.title("🛡️ FTMO PTA Strategy Simulator")
+    st.title("🛡️ PTA Strategy Simulator")
     
     if st.button("🚀 Run Simulation", type="primary"):
         if sim_input.empty:
