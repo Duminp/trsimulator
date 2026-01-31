@@ -1,11 +1,10 @@
-# Trading Strategy Simulator
+# Trading Strategy Analyzer
 
-A Streamlit-based simulator to backtest and visualize a 10% risk trading strategy with specific streak-breaker logic.
+A Streamlit-based Analyzer/simulator to visualize a Propfirm trading strategy.
 
 ## Features
-- **Manual Mode:** Execute trades month-by-month.
-- **Batch Mode:** Simulate 6-24 months instantly.
-- **Configurable:** Adjust Capital, Risk %, Win Rate, and Withdrawals.
+- **execution:** Analyze the trades based on journal data
+- **Configurable:** Adjust Capital and Risk per trade before execution
 
 ## How to run locally
 1. `pip install -r requirements.txt`

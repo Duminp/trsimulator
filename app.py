@@ -6,7 +6,7 @@ from datetime import datetime
 import os
 
 # --- PAGE CONFIG ---
-st.set_page_config(page_title="FTMO Pro Simulator", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Propfirm Trading Analyzer", layout="wide", initial_sidebar_state="expanded")
 
 # --- CUSTOM CSS ---
 st.markdown("""
