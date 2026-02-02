@@ -7,7 +7,7 @@ import os
 
 # --- PAGE CONFIG ---
 # Set layout to wide to utilize the full width of the screen
-st.set_page_config(page_title="Pro Trading Simulator", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="PTA analyzer", layout="wide", initial_sidebar_state="expanded")
 
 # --- CUSTOM CSS ---
 st.markdown("""
@@ -42,7 +42,7 @@ def load_and_clean_data():
         df = pd.read_csv(file_path)
         df.columns = [str(c).strip().upper() for c in df.columns]
         
-        # Robust Date Parsing
+        # Robust Date Parsing - Handles both ISO and UK formats
         df['DATE'] = pd.to_datetime(df['DATE'], dayfirst=True, errors='coerce')
         df = df.dropna(subset=['DATE', 'PAIR', 'TIME'])
         
@@ -168,7 +168,7 @@ if not df.empty:
 
     sim_data = filtered_df[filtered_df['TIME'].isin(times)].copy()
     
-    st.title("📈 Surgical Pro Simulator")
+    st.title("📈 PTA analyzer")
     st.info(f"💡 Profits withdrawn monthly. Risk: {risk}% of {'Balance' if compounding else 'Initial Capital'}.")
     
     results = run_simulation(sim_data, capital, risk, compounding)
@@ -194,9 +194,12 @@ if not df.empty:
             # --- CHRONOLOGICAL MONTHLY HEATMAP ---
             monthly_pnl = results.groupby(['Year', 'Month'])['PnL'].sum().reset_index()
             monthly_pnl['Month'] = pd.Categorical(monthly_pnl['Month'], categories=MONTH_ORDER, ordered=True)
-            heatmap_data = monthly_pnl.pivot(index="Year", columns="Month", values="PnL").fillna(0)
-            # Reindex to ensure Jan-Dec order
-            heatmap_data = heatmap_data.reindex(columns=MONTH_ORDER)
+            
+            # Create Pivot
+            heatmap_data = monthly_pnl.pivot(index="Year", columns="Month", values="PnL")
+            
+            # FIXED: Reindex first, then fillna(0) to prevent "white" blocks for empty months like March
+            heatmap_data = heatmap_data.reindex(columns=MONTH_ORDER).fillna(0)
             
             st.plotly_chart(px.imshow(heatmap_data, text_auto='.0f', title="Monthly PnL Breakdown (Chronological Order)", color_continuous_scale='RdYlGn'), use_container_width=True)
 
