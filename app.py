@@ -6,7 +6,7 @@ from datetime import datetime
 import os
 
 # --- PAGE CONFIG ---
-st.set_page_config(page_title="Pro Trading Simulator", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="PTA Analyzer", initial_sidebar_state="expanded")
 
 # --- CUSTOM CSS ---
 st.markdown("""
