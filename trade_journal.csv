@@ -1,0 +1,516 @@
+DATE,TIME,LIVEorDEMO,PAIR,TYPE,RESULT,GROWTH %,TRADE IMAGE,Comments
+09/01/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/vtN8sFpD/,
+10/01/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/z7tOmJsU/,
+10/01/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/z7tOmJsU/,
+11/01/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/WNsyiK26/,
+11/01/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/WNsyiK26/,
+12/01/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/FORtAApX/,
+16/01/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/7NiKpuQ6/,
+16/01/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/7NiKpuQ6/,
+17/01/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/LxOrH8Nk/,
+17/01/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/LxOrH8Nk/,
+18/01/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/NAS8f75M/,
+19/01/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/TotZrkut/,
+23/01/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/C9l1hYwW/,
+23/01/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/C9l1hYwW/,
+25/01/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/ccDO54kh/,
+25/01/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/ccDO54kh/,
+26/01/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/B40vkO1Q/,
+31/01/2024,3-4pm,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/fcnSMPA0,
+08/01/2024,8-9am,DEMO,EUR/USD,,WON,0.02,https://www.tradingview.com/x/bh1z3kJS/,
+08/01/2024,3-4pm,DEMO,EUR/USD,,WON,0.02,https://www.tradingview.com/x/oP2kIPbC/,
+09/01/2024,3-4pm,DEMO,EUR/USD,,LOST,-0.01,https://www.tradingview.com/x/opCayPrg/,
+09/01/2024,3-4pm,DEMO,EUR/USD,,WON,0.02,https://www.tradingview.com/x/opCayPrg/,
+10/01/2024,3-4pm,DEMO,EUR/USD,,WON,0.02,https://www.tradingview.com/x/L0D5EizQ/,
+12/01/2024,3-4pm,DEMO,EUR/USD,,LOST,-0.01,https://www.tradingview.com/x/6EcVenB1/,
+12/01/2024,3-4pm,DEMO,EUR/USD,,WON,0.02,https://www.tradingview.com/x/6EcVenB1/,
+15/01/2024,3-4pm,DEMO,EUR/USD,,LOST,-0.01,https://www.tradingview.com/x/UQDXffZ6/,
+15/01/2024,3-4pm,DEMO,EUR/USD,,LOST,-0.01,https://www.tradingview.com/x/UQDXffZ6/,
+16/01/2024,3-4pm,DEMO,EUR/USD,,LOST,-0.01,https://www.tradingview.com/x/z3gsH1ck/,
+17/01/2024,3-4pm,DEMO,EUR/USD,,WON,0.02,https://www.tradingview.com/x/EN05Cjiw/,
+18/01/2024,3-4pm,DEMO,EUR/USD,,WON,0.02,https://www.tradingview.com/x/zwJvbNIo/,
+19/01/2024,3-4pm,DEMO,EUR/USD,,LOST,-0.01,https://www.tradingview.com/x/AnXK7nRN/,
+22/01/2024,8-9am,DEMO,EUR/USD,,WON,0.02,https://www.tradingview.com/x/kQzsMKp8/,
+22/01/2024,3-4pm,DEMO,EUR/USD,,LOST,-0.01,https://www.tradingview.com/x/UC87VnFl/,
+22/01/2024,3-4pm,DEMO,EUR/USD,,WON,0.02,https://www.tradingview.com/x/UC87VnFl/,
+25/01/2024,3-4pm,DEMO,EUR/USD,,WON,0.02,https://www.tradingview.com/x/7kBLgvIC/,
+26/01/2024,3-4pm,DEMO,EUR/USD,,WON,0.02,https://www.tradingview.com/x/oQrWm67v/,
+29/01/2024,8-9am,DEMO,EUR/USD,,WON,0.02,https://www.tradingview.com/x/Ow3w8rPm/,
+29/01/2024,3-4pm,DEMO,EUR/USD,,LOST,-0.01,https://www.tradingview.com/x/PDNHfX9L/,
+29/01/2024,3-4pm,DEMO,EUR/USD,,LOST,-0.01,https://www.tradingview.com/x/CtbgZrbv/,
+29/01/2025,1-2pm,DEMO,EUR/USD,BUY,WON,0.005,https://www.tradingview.com/x/R3B4Gj4y/,turned sl into sp but price reached 2%
+06/02/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/lCwbhJVT/,
+06/02/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/lCwbhJVT/,
+07/02/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/aT6G5yiO/,
+08/02/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/wXv2F2YD/,
+09/02/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/2xZCGfhW/,
+13/02/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/yWosWJ8X/,market showing too much consolidation
+13/02/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/yWosWJ8X/,hit stop loss just over 0.003 pips then went to hit tp
+14/02/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/bgXByCFW/,
+15/02/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/I9XnO7p5/,
+15/02/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/I9XnO7p5/,
+16/02/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/wILizbgk/,
+16/02/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/wILizbgk/,
+20/02/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/jPAeXu9A/,Due to technical issues unable to use MT4
+20/02/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/jPAeXu9A/,Due to technical issues unable to use MT4
+20/02/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/nAEA28AV/,Hit Stop loss just over by 0.05 pips then went on to hit TP
+20/02/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/nAEA28AV/,
+21/02/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/IpmC0m7R/,
+23/02/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/D8LHk3HM/,
+23/02/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/D8LHk3HM/,
+27/02/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/CIofKiw5/,
+28/02/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/GaQCU7LE/,
+05/03/2024,10-11am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/0thUOoum/,
+06/03/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/1BsLBqi3/,
+07/03/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/DgTheg4V/,
+13/03/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/gKguB9S3/,
+13/03/2024,7-8pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/jsAx6VXf/,
+14/03/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/0cRHAH58/,
+14/03/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/0cRHAH58/,
+15/03/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/opTp4LLH/,
+18/03/2024,7-8pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/YPYePQ9D/,
+21/03/2024,7-8pm,LIVE,US100,SELL,LOST,-0.01,https://www.tradingview.com/x/Xiu4PCES/,
+22/03/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/ogpDsr5V/,
+26/03/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/bhMy0CNV/,
+27/03/2024,7-8pm,LIVE,US100,BUY,WON,0.02,https://www.tradingview.com/x/7CGPFKKl/,
+02/04/2024,7-8pm,LIVE,US100,BUY,LOST,-0.01,https://www.tradingview.com/x/TS2GdqON/,
+02/04/2024,7-8pm,LIVE,US100,SELL,LOST,-0.01,https://www.tradingview.com/x/TS2GdqON/,
+03/04/2024,7-8pm,LIVE,US100,SELL,LOST,-0.01,https://www.tradingview.com/x/aqdlsyJT/,
+04/04/2024,3-4pm,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/F5KkGzwQ/,
+08/04/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/8mvQD0A9/,
+09/04/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/ZYaxsF7P/,
+10/04/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/oNNGMIkE/,
+15/04/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/htf2wPlv/,
+16/04/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/dTeCQmSW/,
+16/04/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/dTeCQmSW/,
+19/04/2024,11-12am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/JnULC3zd/,
+22/04/2024,9-10am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/LXih7mHg/,
+22/04/2024,3-4pm,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/loREv8hI/,
+23/04/2024,10-11am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/t8eJ7SPx/,
+24/04/2024,6-7am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/KLAGOjzQ/,
+24/04/2024,6-7am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/KLAGOjzQ/,
+25/04/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/ggi52wbm/,
+25/04/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/ggi52wbm/,
+26/04/2024,9-10am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/dYMxHipu/,
+29/04/2024,7-8am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/2mHpO5lK/,
+29/04/2024,7-8am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/2mHpO5lK/,
+30/04/2024,7-8am,LIVE,EUR/USD,,LOST,-0.01,https://www.tradingview.com/x/R37MlB9B/,
+30/04/2024,11-12am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/ZH5JnIIi/,
+02/05/2024,9-10am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/Z8LO8R7q/,
+03/05/2024,7-8am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/UKQA9BG6/,
+03/05/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/UKQA9BG6/,
+07/05/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/LBljX3lW/,
+07/05/2024,6-7pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/mrbwdJYq/,
+08/05/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/pbbif2nW/,commission loss
+09/05/2024,3-4pm,LIVE,US100,SELL,LOST,-0.01,https://www.tradingview.com/x/PouJyseP/,
+09/05/2024,7-8pm,LIVE,US100,BUY,WON,0.02,https://www.tradingview.com/x/aPA33bjE/,
+10/05/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.01,https://www.tradingview.com/x/C8DYPyjQ/,Trade went on too long so took 1%
+13/05/2024,3-4pm,LIVE,US100,SELL,LOST,-0.01,https://www.tradingview.com/x/2ddlu5n7/,
+15/05/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/byb9ZEG7/,
+15/05/2024,2-3pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/GE9AsSrt/,
+16/05/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/ScxTcZDY/,
+16/05/2024,2-3pm,LIVE,US100,BUY,WON,0.02,https://www.tradingview.com/x/poxWdLdx/,
+21/05/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/mWSdGNZv/,
+21/05/2024,3-4pm,LIVE,US100,BUY,WON,0.02,https://www.tradingview.com/x/NRfcM9pv/,
+22/05/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/g2nxeyEl/,
+24/05/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/MHg4sdzc/,
+24/05/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/MHg4sdzc/,
+28/05/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/V3m68gG3/,
+30/05/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/iZD1JpWf/,
+04/06/2024,10-11am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/GjU8OwaT/,
+06/06/2024,7-8pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/slH3ETMi/,Highest price US100 has been so far
+07/06/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/p01gVGR1/,Non Farm Payroll
+11/06/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/IDZg6YHE/,
+11/06/2024,10-11am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/RCuSsI23/,
+12/06/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/KppIzcLz/,
+12/06/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/KppIzcLz/,
+13/06/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/ucNNwmh7/,
+14/06/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/a0Zohuan/,
+14/06/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/a0Zohuan/,
+17/06/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.015,https://www.tradingview.com/x/lKsCWtf0/,decided to tp on psar flip and Monday morning
+18/06/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/ObjHfUD4/,
+20/06/2024,8-9am,DEMO,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/LxJLmB5r/,
+25/06/2024,8-9am,DEMO,EUR/USD,BUY,WON,0.0073,https://www.tradingview.com/x/2wRpomyi/,
+26/06/2024,8-9am,DEMO,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/lE9O4KmE/,
+27/06/2024,8-9am,DEMO,EUR/USD,BUY,,0,https://www.tradingview.com/x/K3Y3x89l/,Break Even
+01/07/2024,7-8am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/QOa47Frl/,
+01/07/2024,7-8am,LIVE,EUR/USD,SELL,,0,https://www.tradingview.com/x/QOa47Frl/,BREAKEVEN
+02/07/2024,7-8am,LIVE,EUR/USD,SELL,WON,0.015,https://www.tradingview.com/x/zD8ZANvK/,Hit TP 2%
+03/07/2024,7-8am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/xDezAMGw/,
+03/07/2024,7-8am,LIVE,EUR/USD,BUY,WON,0.017,https://www.tradingview.com/x/xDezAMGw/,Hit TP 2%
+09/07/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/BFyQDCfW/,risky volume still low
+09/07/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/BFyQDCfW/,very cautious
+10/07/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/aCO5XI4a/,just stopped out by stop loss being in wrong position
+10/07/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/O9oDATj6/,
+11/07/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.01,https://www.tradingview.com/x/GFWMPNJz/,went 2% TP
+17/07/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/RvXVTYXX/,
+18/07/2024,8-9am,LIVE,EUR/USD,BUY,,0,https://www.tradingview.com/x/XQ5wDMVG/,breakeven
+18/07/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/XQ5wDMVG/,
+23/07/2024,8-9am,LIVE,EUR/USD,BUY,,0,https://www.tradingview.com/x/4F9qdXdu/,Would Have lost
+23/07/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.01,https://www.tradingview.com/x/4F9qdXdu/,Would have hit TP
+24/07/2024,10-11am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/TUNhbTDl/,
+25/07/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/Gnpbhg7y/,
+26/07/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/M6zfPO6A/,
+26/07/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/M6zfPO6A/,
+07/08/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/BP7OTN5z/,
+08/08/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/uXqHbFkn/,
+09/08/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/TkXEPpc0/,
+09/08/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.015,https://www.tradingview.com/x/TkXEPpc0/,
+13/08/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.018,https://www.tradingview.com/x/6lT4WXLr/,went to TP (being cautious)
+15/08/2024,3-4pm,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/xGVJCIfl/,
+16/08/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/rCoOoMw0/,
+16/08/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.018,https://www.tradingview.com/x/rCoOoMw0/,A bit too cautious price went into buy zone so took out early. went on to 2%
+20/08/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/CjZ2pQb0/,
+20/08/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.018,https://www.tradingview.com/x/CjZ2pQb0/,A bit too cautious price went into buy zone so took out early. went on to 2%
+21/08/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/NqKF29DI/,
+21/08/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/NqKF29DI/,
+23/08/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/A02knKD4/,
+27/08/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.01,https://www.tradingview.com/x/IjUylbBx/,
+28/08/2024,8-9am,DEMO,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/tVzUQ3je/,
+04/09/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.015,https://www.tradingview.com/x/ArbZkqVh/,
+05/09/2024,8-9am,LIVE,EUR/USD,SELL,LOST,0,https://www.tradingview.com/x/7WGtFj2e/,put SL to entry
+05/09/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/7WGtFj2e/,
+10/09/2024,3-4pm,LIVE,US100,SELL,LOST,-0.01,https://www.tradingview.com/x/9w4shrf9/,
+11/09/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/xVNMPh52/,
+11/09/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.01,https://www.tradingview.com/x/xVNMPh52/,Took profit at 1% because price in sell zone
+12/09/2024,3-4pm,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/1lFqi5xA/,
+12/09/2024,4-5pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/Z5nBcRbY/,
+13/09/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/yc97E5P8/,
+13/09/2024,7-8pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/zgD2EDG3/,
+17/09/2024,3-4pm,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/AL8D0bcR/,4 peices of non red flag news at 3pm (moved 5 pips) hit my sl
+17/09/2024,6-7pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/EVQ5Upk4/,
+18/09/2024,2-3pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/e0FgCzru/,
+19/09/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/1Hg2kdAT/,
+19/09/2024,2-3pm,LIVE,US100,BUY,WON,0.015,https://www.tradingview.com/x/aC87UKuO/,
+20/09/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/R4k945K1/,Sl hit by a few 10ths of a pip then went on to hit TP
+24/09/2024,2-3pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/67N2uZGw/,
+25/09/2024,8-9am,LIVE,EUR/USD,SELL,,0,https://www.tradingview.com/x/ml2KAAGK/,put SL to break even (protect equity) the trade would have lost
+25/09/2024,2-3pm,LIVE,US100,BUY,WON,0.015,https://www.tradingview.com/x/955Bz0SE/,"Took profit early, price turned after and would have lost"
+26/09/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.015,https://www.tradingview.com/x/bOcUP1ld/,got out early because of red flag news
+27/09/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/yoOnrn8Y/,
+27/09/2024,9-10am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/yoOnrn8Y/,
+02/10/2024,3-4pm,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/awt8Z152/,
+02/10/2024,3-4pm,LIVE,US100,BUY,,0,https://www.tradingview.com/x/dXt40l1r/,"put sl to breakeven too early, price took entry out for break even and then went onto hit tp"
+08/10/2024,2-3pm,LIVE,US100,BUY,WON,0.02,https://www.tradingview.com/x/V5calZc8/,
+09/10/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.015,https://www.tradingview.com/x/59PtNawb/,Trade would have lost if I had not got out early
+10/10/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.01,https://www.tradingview.com/x/vfLGeuuB/,price would of hit sl
+11/10/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/SxTyOHjf/,
+11/10/2024,10-11am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/6OPMSupv/,
+15/10/2024,2-3pm,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/syQTZ1x6/,
+15/10/2024,3-4pm,LIVE,EUR/USD,SELL,WON,0.015,https://www.tradingview.com/x/syQTZ1x6/,took out on EMA 462 but would have won 2%
+16/10/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/XdxJJhyw/,
+16/10/2024,9-10am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/jgdhUdJ9/,
+17/10/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/QFRBYZ8j/,
+17/10/2024,3-4pm,LIVE,US100,BUY,LOST,-0.01,https://www.tradingview.com/x/RMLVvKsY/,
+18/10/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.01,https://www.tradingview.com/x/Tl7L2VA4/,
+22/10/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/FwYYb9nL/,
+23/10/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/uzFL0zfU/,
+23/10/2024,9-10am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/RD817IBR/,
+25/10/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/kSezqact/,
+30/10/2024,1-2pm,DEMO,US100,BUY,WON,0.02,https://www.tradingview.com/x/2lfwwuXk/,
+31/10/2024,8-9am,DEMO,EUR/USD,SELL,,0,https://www.tradingview.com/x/vCtNyB28/,"Break even, trade would have lost"
+31/10/2024,8-9am,DEMO,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/vCtNyB28/,
+05/11/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/9O9UQmgv/,
+05/11/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/9O9UQmgv/,
+06/11/2024,3-4pm,LIVE,US100,SELL,LOST,-0.01,https://www.tradingview.com/x/4gmAQbNq/,
+06/11/2024,3-4pm,LIVE,US100,SELL,,0,https://www.tradingview.com/x/4gmAQbNq/,
+08/11/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/Ve0dgBTu/,
+12/11/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/rbsmmRVC/,
+12/11/2024,9-10am,LIVE,EUR/USD,SELL,WON,0.018,https://www.tradingview.com/x/rbsmmRVC/,
+13/11/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/deKk7LS5/,
+14/11/2024,3-4pm,LIVE,US100,BUY,,0,https://www.tradingview.com/x/5gngho1z/,breakeven
+14/11/2024,3-4pm,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/OCLMFnpj/,
+15/11/2024,9-10am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/v0axB3SO/,
+19/11/2024,9-10am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/Ac91vlZd/,
+19/11/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/VvbTmd5R/,"Anticipated a red trend on our indicator, didnt happen, should be NO trade"
+20/11/2024,8-9am,LIVE,EUR/USD,SELL,,0,https://www.tradingview.com/x/nLnF4Xn1/,St L to entry and breakeven BUT would have won if not moved SL
+20/11/2024,9-10am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/8m86BZlT/,
+21/11/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.018,https://www.tradingview.com/x/NaWg8zqJ/,
+25/11/2024,3-4pm,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/2PRkJeST/,
+27/11/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.004,https://www.tradingview.com/x/sd0fdkTD/,
+29/11/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/HhaVlbb2/,
+02/12/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/EILMLwpt/,
+03/12/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/3IMV0pUC/,
+03/12/2024,9-10am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/Cgsl5pXi/,
+04/12/2024,9-10am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/7POCxHZe/,
+05/12/2024,8-9am,LIVE,EUR/USD,BUY,WON,0.016,https://www.tradingview.com/x/BGsoaxVp/,
+06/12/2024,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/IOSBqeEL/,
+09/12/2024,3-4pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/cS4cvyyk/,
+10/12/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/eNZ2Rz3U/,
+10/12/2024,9-10am,LIVE,EUR/USD,SELL,WON,0.01,https://www.tradingview.com/x/eNZ2Rz3U/,took partial profit but went to 2%
+11/12/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/LluF0MOk/,
+11/12/2024,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/LluF0MOk/,
+12/12/2024,9-10am,LIVE,EUR/USD,BUY,WON,0.004,https://www.tradingview.com/x/eo6NndKx/,
+13/12/2024,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/Gh98O8Z9/,"manual error, anticipated trend colour change, didnt happen"
+13/12/2024,3-4pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/nkvguoze/,
+17/12/2024,2-3pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/PZM3Pdzu/,
+18/12/2024,2-3pm,LIVE,US100,BUY,WON,0.01,https://www.tradingview.com/x/HZJDTj14/,
+19/12/2024,2-3pm,DEMO,US100,SELL,WON,0.02,https://www.tradingview.com/x/cMaJyu73/,
+20/12/2024,8-9am,DEMO,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/pUn6SAUr/,
+07/01/2025,1-2pm,LIVE,EUR/USD,BUY,WON,0.01,https://www.tradingview.com/x/Bxdpqcst/,Trade would of lost if not managed SL
+08/01/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/LvorEDgL/,
+08/01/2025,12-1pm,LIVE,EUR/USD,SELL,WON,0.01,https://www.tradingview.com/x/tA6ZuR2G/,Trade would of lost if not managed SL
+09/01/2025,8-9am,LIVE,EUR/USD,BUY,WON,0.004,https://www.tradingview.com/x/E2vGzfai/,would have gone to 2%
+10/01/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/309aJ3GM/,
+10/01/2025,3-4pm,LIVE,US100,BUY,WON,0.02,https://www.tradingview.com/x/YHn8MDtv/,
+14/01/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/lWrjrYAb/,
+14/01/2025,2-3pm,LIVE,US100,BUY,WON,0.02,https://www.tradingview.com/x/wQuCXkOk/,
+15/01/2025,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/JAujcNsC/,
+16/01/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/w8nCcWPE/,
+16/01/2025,9-10am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/8bZKrGcB/,
+22/01/2025,4-5pm,LIVE,US100,BUY,WON,0.01,https://www.tradingview.com/x/hkkbFyQR/,dont push it take 1% but it did 2% in the end
+23/01/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/i9MCuqrC/,
+23/01/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/i9MCuqrC/,
+24/01/2025,9-10am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/v971RD9Q/,
+28/01/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/AXmDwYPd/,
+28/01/2025,9-10am,LIVE,EUR/USD,BUY,WON,0.01,https://www.tradingview.com/x/dHyOGV1j/,in the trade a long time so decided to take 1% but 2% was acheived
+29/01/2025,8-9am,LIVE,EUR/USD,BUY,WON,0.005,https://www.tradingview.com/x/8qqOXQGS/,
+30/01/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/YpUn4mom/,
+30/01/2025,4-5pm,LIVE,US100,BUY,WON,0.01,https://www.tradingview.com/x/3EP3bpeK/,
+31/01/2025,9-10am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/L4Q8ydOT/,
+05/02/2025,10-11am,LIVE,EUR/USD,BUY,WON,0.01,https://www.tradingview.com/x/xxpJgmxJ/,
+06/02/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/ww7c1KWO/,
+06/02/2025,4-5pm,LIVE,EUR/USD,BUY,WON,0.01,https://www.tradingview.com/x/nzazKSdq/,
+07/02/2025,9-10am,LIVE,EUR/USD,SELL,,0,https://www.tradingview.com/x/LjHySdQY/,BreakEven
+07/02/2025,9-10am,LIVE,EUR/USD,SELL,WON,0.016,https://www.tradingview.com/x/8YoAyKqV/,price stalled on support line hence 1;6%
+11/02/2025,2-3pm,LIVE,US100,BUY,WON,0.02,https://www.tradingview.com/x/td2Z99nP/,
+12/02/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/v3IxgXdz/,
+12/02/2025,3-4pm,LIVE,US100,SELL,WON,0.015,https://www.tradingview.com/x/UroRE9so/,went to 2%
+13/02/2025,9-10am,LIVE,EUR/USD,BUY,WON,0.019,https://www.tradingview.com/x/5faPHgDW/,went to 2%
+14/02/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/yqCAYZ0J/,
+14/02/2025,12-1pm,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/tNJmymNw/,
+18/02/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/CA6A26WR/,
+18/02/2025,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/yGYIIt0r/,
+19/02/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/1SVlRpGg/,
+19/02/2025,2-3pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/ylkY3amU/,
+20/02/2025,8-9am,DEMO,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/8Nq7LBJx/,
+25/02/2025,8-9am,DEMO,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/lP8EIA2G/,
+25/02/2025,3-4pm,DEMO,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/cWITgIWF/,
+26/02/2025,8-9am,DEMO,EUR/USD,SELL,WON,0.018,https://www.tradingview.com/x/LIiDpocp/,
+27/02/2025,8-9am,DEMO,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/gOKLy4LF/,
+27/02/2025,2-3pm,DEMO,US100,SELL,WON,0.02,https://www.tradingview.com/x/h36gCGS4/,
+04/03/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/I8T0H4LY/,
+04/03/2025,9-10am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/2EUQP7Su/,
+05/03/2025,9-10am,LIVE,,SELL,WON,0,https://www.tradingview.com/x/QRUHP9dH/,Trade won but put stop loss to entry to protect equity
+07/03/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/fNYwjck2/,
+07/03/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/d0Ska7VG/,
+12/03/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/hX7cxirL/,
+12/03/2025,1-2pm,LIVE,US100,BUY,WON,0.02,https://www.tradingview.com/x/3Z4OYbcu/,
+13/03/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/Mgs6dkCo/,
+13/03/2025,1-2pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/WpnDuYRD/,
+14/03/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/098jEcuE/,
+18/03/2025,9-10am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/pC6gqsRp/,
+20/03/2025,9-10am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/NkvwB9mh/,
+20/03/2025,1-2pm,LIVE,US100,BUY,WON,0.02,https://www.tradingview.com/x/NJWmP266/,
+25/03/2025,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/04SYkTBJ/,Trading for
+27/03/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/CPPnMas3/,Trading for - Reached 1.9% but turned around
+28/03/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/sRiCOHoe/,Trading for
+28/03/2025,10-11am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/sRiCOHoe/,Trading for
+03/04/2025,2-3pm,LIVE,US100,BUY,WON,0.02,https://www.tradingview.com/x/c7qeiiE3/,After EUR/USD turmoil in the morning session US100 was a clear setup
+04/04/2025,10-11am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/jIKZwBLe/,
+04/04/2025,11-12am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/jIKZwBLe/,
+07/04/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/VLJmSG90/,
+07/04/2025,12-1pm,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/iN6f0jBC/,
+08/04/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/yXvlB5DQ/,No second trade opportunity
+15/04/2025,8-9am,LIVE,EUR/USD,BUY,WON,0,https://www.tradingview.com/x/cSHupD2l/,Moved SL to Break Even - Trade would have lost
+15/04/2025,1-2pm,LIVE,EUR/USD,BUY,WON,0.008,https://www.tradingview.com/x/tDHLrqI1/,Moved SL slowly up to lock in profits settled for 0.8% would have been 2%
+16/04/2025,4-5pm,LIVE,EUR/USD,BUY,WON,0.0128,https://www.tradingview.com/x/NhReCHru/,Moved SL slowly up to lock in profits.Would have reached 2%
+17/04/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/GeLcSvKl/,
+17/04/2025,8-9am,LIVE,EUR/USD,BUY,WON,0.006,https://www.tradingview.com/x/GeLcSvKl/,Managed SL to protect assets. Hit SL at 0.6% profit
+18/04/2025,8-9am,LIVE,EUR/USD,BUY,WON,0,https://www.tradingview.com/x/ZbAozrlV/,Good Friday: Exited trade due to low volume. Trade would have lost
+22/04/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/NUysRyod/,
+22/04/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/NUysRyod/,
+24/04/2025,8-9pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/ub70H9qJ/,
+25/04/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/p6bc6Fiu/,
+29/04/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/djGUTNH7/,
+30/04/2025,8-9am,LIVE,EUR/USD,SELL,WON,0.013,https://www.tradingview.com/x/2NxH50DX/,Managed SL to secure 1.3%
+01/05/2025,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/ZcBdv97l/,
+02/05/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/jgpTssOw/,`
+02/05/2025,11-12am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/uIfhkVQO/,
+06/05/2025,2-3pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/1SHj3Nkp/,
+07/05/2025,8-9am,LIVE,EUR/USD,SELL,WON,0.018,https://www.tradingview.com/x/I5OS5v4s/,went to 2% anyway
+08/05/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/vA6I5lfI/,hit the buy button in error
+08/05/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/vA6I5lfI/,
+13/05/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/RYxJPZT8/,"did have a sell alert, but because of volatility, it disappeared"
+13/05/2025,2-3pm,LIVE,US100,BUY,WON,0.02,https://www.tradingview.com/x/HByrnqDf/,
+14/05/2025,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/pH9g8KkB/,
+15/05/2025,8-9am,LIVE,EUR/USD,SELL,WON,0.013,https://www.tradingview.com/x/zMKF8Vgs/,it went to 2% after a stall
+21/05/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/1C8CqFx9/,
+21/05/2025,2-3pm,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/IijWywR7/,
+23/05/2025,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/nOl7EPeb/,
+27/05/2025,2-3pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/MHJYYyzp/,
+03/06/2025,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/deBxJliZ/,
+04/06/2025,10-11am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/bHhuz7pR/,
+05/06/2025,8-9am,LIVE,EUR/USD,SELL,,,https://www.tradingview.com/x/mSH8ghAF/,
+05/06/2025,11-12am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/BtqXMZDS/,
+06/06/2025,8-9am,LIVE,EUR/USD,SELL,,,https://www.tradingview.com/x/tmNc2rC1/,Moved SL to BREAKEVEN pending BUY ZONE
+10/06/2025,8-9am,LIVE,EUR/USD,BUY,,,https://www.tradingview.com/x/eDFk9hUa/,SL TO BREAKEVEN
+10/06/2025,3-4pm,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/j0KagNAf/,
+11/06/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/h9A4yORE/,
+11/06/2025,2-3pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/bJ1Wb4RJ/,
+13/06/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/hsKjsYVH/,
+13/06/2025,3-4pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/opS8JETh/,
+17/06/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/FtJD1QoB/,
+18/06/2025,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/hbfHtrIO/,
+19/06/2025,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/XY9hNCsq/,
+20/06/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/UMrxa6Wk/,
+20/06/2025,2-3pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/7YIXeizq/,
+24/06/2025,4-5pm,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/iWKALyM3/,
+25/06/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/F1noHjYP/,
+25/06/2025,2-3pm,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/LQKqOQkH/,
+26/06/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/7BFj1nsw/,
+27/06/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/OlWK3vxB/,
+27/06/2025,9-10am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/TnUyRuqr/,
+01/07/2025,11-12am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/51nnu534/,
+01/07/2025,11-12am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/51nnu534/,
+02/07/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/Z3rsEO8T/,
+02/07/2025,2-3pm,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/5NDzxF3X/,
+03/07/2025,10-11am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/UWwBjaf0/,
+03/07/2025,11-12am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/svShuB0J/,
+08/07/2025,8-9am,LIVE,EUR/USD,SELL,WON,0.008,https://www.tradingview.com/x/KJktHHRE/,
+09/07/2025,2-3pm,LIVE,US100,BUY,WON,0.02,https://www.tradingview.com/x/ZLBX1w0r/,
+09/07/2025,7-8pm,LIVE,EUR/USD,BUY,WON,0.0015,https://www.tradingview.com/x/Wvmj80cL/,
+10/07/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/MpMGQgnR/,
+10/07/2025,2-3pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/j8j0QoxI/,
+11/07/2025,8-9am,LIVE,EUR/USD,SELL,WON,0.002,https://www.tradingview.com/x/G9w1Q2Gs/,
+15/07/2025,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/AHHNNHFu/,
+16/07/2025,2-3pm,LIVE,US100,SELL,WON,0.016,https://www.tradingview.com/x/2Z2iwIqA/,
+16/07/2025,7-8pm,LIVE,US100,BUY,WON,0.005,https://www.tradingview.com/x/aUOQuX2A/,
+17/07/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/jcfftCPd/,
+17/07/2025,2-3pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/TAqXWq1u/,
+18/07/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/aZBjDr9a/,
+22/07/2025,2-3pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/rKGwF5ON/,
+23/07/2025,8-9am,LIVE,EUR/USD,SELL,WON,0.015,https://www.tradingview.com/x/iCMrgbb9/,trade would have lost if NOT taken at 1.5
+24/07/2025,8-9pm,LIVE,US100,SELL,LOST,-0.01,https://www.tradingview.com/x/0qL4BTak/,
+29/07/2025,8-9am,LIVE,EUR/USD,BUY,WON,0.015,https://www.tradingview.com/x/ZeeEut4E/,"Trade went on to 2%, took profit early for resistance"
+29/07/2025,2-3pm,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/341e13w3/,
+29/07/2025,2-3pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/Zv05ULAx/,
+30/07/2025,8-9am,LIVE,EUR/USD,SELL,,0,https://www.tradingview.com/x/GDobdJDk/,Breakeven
+01/08/2025,9-10am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/gGeA4JOf/,price stalled as news is iminent
+04/08/2025,2-3pm,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/ysRHJdDE/,
+04/08/2025,4-5pm,LIVE,US100,BUY,WON,0.013,https://www.tradingview.com/x/gpZam6jb/,
+05/08/2025,8-9am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/QOWpWPJV/,
+07/08/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/TebTMTuT/,
+07/08/2025,7-8pm,LIVE,EUR/USD,BUY,WON,0.011,https://www.tradingview.com/x/YoE7aQ34/,Closely managed trade took profit would have won 2%
+13/08/2025,3-4pm,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/Qe2W0eHz/,
+13/08/2025,7-8pm,LIVE,US100,BUY,LOST,-0.01,https://www.tradingview.com/x/3T5ktdzj/,
+14/08/2025,1-2pm,LIVE,US100,BUY,WON,0.02,https://www.tradingview.com/x/5BsbwuDA/,
+19/08/2025,9-10am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/LCWN45vj/,
+19/08/2025,2-3pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/0SvN4Msw/,
+20/08/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/sD2xc3Bl/,
+26/08/2025,8-9am,LIVE,EUR/USD,BUY,WON,0.006,https://www.tradingview.com/x/MagaYhnp/,
+27/08/2025,12-1pm,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/i23pOb2H/,
+28/08/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/MORYhQ16/,
+02/09/2025,8-9am,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/zhhROLRL/,
+03/09/2025,2-3pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/VVdxMfLr/,
+04/09/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/S8UfJiyl/,
+04/09/2025,11-12am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/rPvzdMmQ/,
+05/09/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/RKPZ7zGW/,
+05/09/2025,12-1pm,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/m9VLFCdS/,
+09/09/2025,8-9am,LIVE,EUR/USD,SELL,WON,0.015,https://www.tradingview.com/x/3C7YC3iN/,
+10/09/2025,8-9am,LIVE,EUR/USD,BUY,WON,0.007,https://www.tradingview.com/x/wmFHqWdU/,
+10/09/2025,2-3pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/zvg2tmvd/,
+11/09/2025,3-4pm,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/RnSucwiT/,
+11/09/2025,7-8pm,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/Z9VPABYo/,
+12/09/2025,10-11am,LIVE,EUR/USD,BUY,,0,https://www.tradingview.com/x/kIOx6v9i/,"Put trade to breakeven,Trade would have lost"
+12/09/2025,11-12am,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/az8aafay/,
+15/09/2025,2-3pm,LIVE,EUR/USD,SELL,WON,0.02,https://www.tradingview.com/x/wp7ipqcX/,
+15/09/2025,7-8pm,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/E4OEQWNq/,
+16/09/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/iDtCMjyg/,
+25/09/2025,2-3pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/5fiocPWP/,
+25/09/2025,7-8pm,LIVE,US100,BUY,WON,0.01,https://www.tradingview.com/x/Fu6ys3XA/,
+26/09/2025,8-9am,LIVE,EUR/USD,SELL,,0,https://www.tradingview.com/x/heD0K8b2/,"breakeven, didnt like the previous pattern"
+30/09/2025,8-9am,LIVE,EUR/USD,SELL,WON,0.008,https://www.tradingview.com/x/ma7qqAyO/,low liquidity
+01/10/2025,2-3pm,LIVE,US100,BUY,WON,0.01,https://www.tradingview.com/x/8bNs0kJ6/,was the highest for a while volume running low
+01/10/2025,7-8pm,LIVE,EUR/USD,BUY,WON,0.012,https://www.tradingview.com/x/DsU18VpP/,reached the ema.462
+02/10/2025,2-3pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/g98N1ekR/,
+03/10/2025,10-11am,LIVE,EUR/USD,SELL,WON,0.002,https://www.tradingview.com/x/OVJYFzKE/,Market looks nervy low liquidity
+07/10/2025,9-10am,LIVE,EUR/USD,BUY,WON,0.005,https://www.tradingview.com/x/YMFOlx8C/,Again very low liquidity
+09/10/2025,2-3pm,LIVE,US100,SELL,WON,0.01,https://www.tradingview.com/x/0lGEYfF6/,"Being over cautios felt nervy, went to 2% win"
+09/10/2025,7-8pm,LIVE,US100,BUY,LOST,-0.01,https://www.tradingview.com/x/zsUU3ljp/,
+10/10/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/23CY5owF/,
+14/10/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/u5V1IT0X/,
+14/10/2025,2-3pm,LIVE,US100,SELL,WON,0.02,https://www.tradingview.com/x/PhmvVNPk/,
+15/10/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/ZcI4IneV/,
+15/10/2025,2-3pm,LIVE,US100,SELL,WON,0.01,https://www.tradingview.com/x/dbYXQP8s/,TP at 1% BUT should of stayed in and acheived 2%
+16/10/2025,7-8pm,LIVE,EUR/USD,SELL,WON,0.01,https://www.tradingview.com/x/rDLG7JWj/,
+16/10/2025,7-8pm,LIVE,US100,BUY,WON,0.02,https://www.tradingview.com/x/fSEGfPCx/,
+17/10/2025,8-9am,LIVE,EUR/USD,BUY,LOST,-0.01,https://www.tradingview.com/x/PD2npV7n/,Again market displaying low liquidity
+17/10/2025,8-9am,LIVE,EUR/USD,BUY,WON,0.01,https://www.tradingview.com/x/ysXBUTFo/,because of low liquidity only taking a 1% profit
+21/10/2025,8-9am,LIVE,EUR/USD,SELL,,0,https://www.tradingview.com/x/RFkWw8BQ/,BREAKEVEN Trade would have lost
+21/10/2025,8-9am,LIVE,EUR/USD,SELL,LOST,-0.01,https://www.tradingview.com/x/nFWjG7eb/,
+21/10/2025,4-5pm,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/v9aJD6DC/,"because first trade today was BE, justified taking this trade"
+22/10/2025,1-2pm,LIVE,EUR/USD,BUY,LOST,-0.002,https://www.tradingview.com/x/LpDorUNv/,Did not like how trade was playing out
+22/10/2025,2-3pm,LIVE,US100,SELL,WON,0.016,https://www.tradingview.com/x/uozpn5FW/,went too 2% BUT took out early because price entered the BUY zone
+23/10/2025,2-3pm,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/2pp45ObI/,
+24/10/2025,8-9am,LIVE,EUR/USD,SELL,WON,0.01,https://www.tradingview.com/x/JQIa8dsI/,Took profit because price entered buy zone
+29/10/2025,1-2pm,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/1TzmzROa/,
+29/10/2025,4-5pm,LIVE,US100,BUY,WON,0.005,https://www.tradingview.com/x/RfhvRWeD/,price hugging the purple EMA 462 so took profit
+30/10/2025,1-2pm,LIVE,EUR/USD,BUY,WON,0.02,https://www.tradingview.com/x/FOe9o2ZG/,
+03/11/2025,1-2pm,LIVE,EUR/USD,LONG,LOST,-0.01,https://www.tradingview.com/x/LDyjwJre/,
+04/11/2025,8-9am,LIVE,EUR/USD,SHORT,WON,0.02,https://www.tradingview.com/x/rEtlVAaA/,
+05/11/2025,1-2pm,LIVE,EUR/USD,SHORT,WON,0.01,https://www.tradingview.com/x/1dz5vCPj/,"took profit. at one percent because coming close to a, buy zone."
+06/11/2025,8-9am,LIVE,EUR/USD,SHORT,LOST,-0.01,https://www.tradingview.com/x/qEGAoyvV/,consolidation before the trade
+06/11/2025,12-1pm,LIVE,EUR/USD,LONG,WON,0.01,https://www.tradingview.com/x/RrnaCkAV/,
+07/11/2025,2-3pm,LIVE,US100,SHORT,WON,0.02,https://www.tradingview.com/x/0CchbiIl/,
+10/11/2025,2-3pm,LIVE,US100,LONG,WON,0.01,https://www.tradingview.com/x/cfB3ghqy/,went to 2%
+11/11/2025,8-9am,LIVE,EUR/USD,SHORT,WON,0.01,https://www.tradingview.com/x/1uu8JAWN/,
+11/11/2025,1-2pm,LIVE,US100,SHORT,LOST,-0.01,https://www.tradingview.com/x/g3Lj22S1/,
+12/11/2025,1-2pm,LIVE,EUR/USD,LONG,LOST,-0.01,https://www.tradingview.com/x/AJft5iKA/,
+12/11/2025,2-3pm,LIVE,US100,SHORT,WON,0.02,https://www.tradingview.com/x/xGHQuxsZ/,
+13/11/2025,8-9am,LIVE,EUR/USD,SHORT,LOST,-0.01,https://www.tradingview.com/x/y9Tq952C/,
+13/11/2025,2-3pm,LIVE,US100,SHORT,WON,0.02,https://www.tradingview.com/x/9plx1TEX/,
+14/11/2025,8-9am,LIVE,EUR/USD,LONG,LOST,-0.01,https://www.tradingview.com/x/tTojOjI4/,
+14/11/2025,2-3pm,LIVE,US100,SHORT,WON,0.02,https://www.tradingview.com/x/rQdxxJxQ/,
+17/11/2025,2-3pm,LIVE,US100,LONG,WON,0.02,https://www.tradingview.com/x/pFb6dDCP/,
+18/11/2025,8-9am,LIVE,EUR/USD,SHORT,WON,0.02,https://www.tradingview.com/x/KDKUvefM/,
+19/11/2025,1-2pm,LIVE,EUR/USD,SHORT,WON,0.02,https://www.tradingview.com/x/A4QpMcTI/,
+19/11/2025,2-3pm,LIVE,US100,LONG,WON,0.01,https://www.tradingview.com/x/sVFwbWRG/,Price close to Sell Zone but did continue for 2%
+20/11/2025,8-9am,LIVE,EUR/USD,SHORT,BREAKEVEN,0,https://www.tradingview.com/x/lD7p0J1t/,
+21/11/2025,8-9am,LIVE,EUR/USD,SHORT,WON,0.01,https://www.tradingview.com/x/m26c5dNU/,
+24/11/2025,8-9am,LIVE,EUR/USD,LONG,WON,0.01,https://www.tradingview.com/x/R3uuMyY4/,Price did go to 2%
+25/11/2025,8-9am,LIVE,EUR/USD,SHORT,BREAKEVEN,0,https://www.tradingview.com/x/8TVN8Eiw/,
+25/11/2025,8-9am,LIVE,EUR/USD,SHORT,LOST,-0.01,https://www.tradingview.com/x/tL4zEFM2/,
+26/11/2025,6-7pm,LIVE,US100,SHORT,LOST,-0.01,https://www.tradingview.com/x/ZaVRRR2M/,
+27/11/2025,7-8am,LIVE,EUR/USD,LONG,WON,0.02,https://www.tradingview.com/x/BR4wD3aG/,
+02/12/2025,8-9am,LIVE,EUR/USD,SHORT,LOST,-0.01,https://www.tradingview.com/x/E8WV17Cc/,
+02/12/2025,6-7pm,LIVE,EUR/USD,SHORT,BREAKEVEN,0,https://www.tradingview.com/x/LmN0rU6V/,
+04/12/2025,2-3pm,LIVE,US100,SHORT,WON,0.02,https://www.tradingview.com/x/2MVAU2f6/,
+05/12/2025,7-8am,LIVE,EUR/USD,SHORT,WON,0.02,https://www.tradingview.com/x/bMCHSdWD/,
+08/12/2025,6-7pm,LIVE,US100,SHORT,WON,0.01,https://www.tradingview.com/x/FCeotPee/,went to 2% BUT was in the buy zone
+09/12/2025,8-9am,LIVE,EUR/USD,LONG,WON,0.02,https://www.tradingview.com/x/lV0JlQ5r/,
+09/12/2025,6-7pm,LIVE,EUR/USD,LONG,LOST,-0.01,https://www.tradingview.com/x/QJBZC15V/,
+10/12/2025,6-7pm,LIVE,US100,SHORT,WON,0.015,https://www.tradingview.com/x/fhSjp35Q/,
+11/12/2025,8-9am,LIVE,EUR/USD,SHORT,LOST,-0.01,https://www.tradingview.com/x/dWbWkfPr/,
+11/12/2025,8-9am,LIVE,EUR/USD,SHORT,WON,0.015,https://www.tradingview.com/x/v6vTB6g7/,Took TP @ 1.5% (felt Nervy) trade did go to 2%
+11/12/2025,2-3pm,LIVE,US100,SHORT,WON,0.02,https://www.tradingview.com/x/tY78YfPN/,
+12/12/2025,2-3pm,LIVE,US100,SHORT,WON,0.02,https://www.tradingview.com/x/k7tSGgMH/,
+15/12/2025,2-3pm,LIVE,US100,SHORT,WON,0.02,https://www.tradingview.com/x/XDmnfR3Z/,
+15/12/2025,6-7pm,LIVE,US100,LONG,LOST,-0.01,https://www.tradingview.com/x/UoSGj4DE/,
+16/12/2025,8-9am,LIVE,EUR/USD,SHORT,WON,0.02,https://www.tradingview.com/x/An9gpKac/,
+16/12/2025,2-3pm,LIVE,US100,LONG,WON,0.02,https://www.tradingview.com/x/W7IcRh7B/,
+19/12/2025,8-9am,LIVE,EUR/USD,LONG,LOST,-0.01,https://www.tradingview.com/x/l4Sb1G2N/,
+05/01/2026,6-7pm,LIVE,US100,LONG,LOST,-0.01,https://www.tradingview.com/x/v6vvO3cr/,
+06/01/2026,8-9am,LIVE,EUR/USD,LONG,LOST,-0.01,https://www.tradingview.com/x/x6Yumhyk/,
+07/01/2026,6-7pm,LIVE,US100,SHORT,BREAKEVEN,0,https://www.tradingview.com/x/rPJ6hlQk/,"Trade looked great so sl to breakeven but came back, then hit 2%"
+08/01/2026,2-3pm,LIVE,US100,SHORT,WON,0.02,https://www.tradingview.com/x/g2ZVCyf3/,
+09/01/2026,8-9am,LIVE,EUR/USD,LONG,WON,0.02,https://www.tradingview.com/x/fTHQH1qJ/,
+12/01/2026,2-3pm,LIVE,US100,LONG,WON,0.02,https://www.tradingview.com/x/tn0RA8fz/,
+13/01/2026,8-9am,LIVE,EUR/USD,SHORT,LOST,-0.01,https://www.tradingview.com/x/vlu7VYbG/,
+13/01/2026,6-7pm,LIVE,EUR/USD,SHORT,LOST,-0.01,https://www.tradingview.com/x/B46i601Y/,
+14/01/2026,12-1pm,LIVE,US100,LONG,WON,0.01,https://www.tradingview.com/x/Wu0MO8oK/,took 1% because trade flattened out BUT did go too 2%
+14/01/2026,6-7pm,LIVE,US100,LONG,LOST,-0.01,https://www.tradingview.com/x/NiYrTw4O/,
+15/01/2026,8-9am,LIVE,EUR/USD,LONG,WON,0.01,https://www.tradingview.com/x/XOawfvsj/,Nervy price action
+15/01/2026,2-3pm,LIVE,US100,SHORT,WON,0.02,https://www.tradingview.com/x/7oe9hsVU/,
+16/01/2026,8-9am,LIVE,EUR/USD,SHORT,LOST,-0.01,https://www.tradingview.com/x/0AaoBpCS/,Price did NOT break consolidation
+16/01/2026,2-3pm,LIVE,US100,SHORT,WON,0.02,https://www.tradingview.com/x/T4TMFNhP/,
+22/01/2026,2-3pm,LIVE,US100,SHORT,WON,0.01,https://www.tradingview.com/x/hwLI8ZQH/,it went to 2%
+22/01/2026,7-8pm,LIVE,US100,SHORT,LOST,-0.01,https://www.tradingview.com/x/EoduzDhX/,
+23/01/2026,8-9am,LIVE,EUR/USD,LONG,WON,0.01,https://www.tradingview.com/x/GbUbdg2w/,
+27/01/2026,8-9am,LIVE,EUR/USD,LONG,WON,0.01,https://www.tradingview.com/x/PJlLbPtT/,
+27/01/2026,2-3pm,LIVE,US100,LONG,WON,0.01,https://www.tradingview.com/x/vRjQILYu/,Entered Sell Zone BUT did go to 2%
+27/01/2026,7-8pm,LIVE,EUR/USD,SHORT,LOST,-0.01,https://www.tradingview.com/x/dYQ1FIIC/,
+28/01/2026,2-3pm,LIVE,EUR/USD,SHORT,WON,0.015,https://www.tradingview.com/x/WoPChMpM/,
+29/01/2026,2-3pm,LIVE,US100,SHORT,WON,0.01,https://www.tradingview.com/x/PJLlCnf6/,it went to 2%
+29/01/2026,7-8pm,LIVE,EUR/USD,SHORT,WON,0.005,https://www.tradingview.com/x/t5pfrmWR/,Took profit when realised a buy zone had just been formed
+30/01/2026,8-9am,LIVE,EUR/USD,,BREAKEVEN,,https://www.tradingview.com/x/ZucbhEUZ/,
