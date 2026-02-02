@@ -6,7 +6,8 @@ from datetime import datetime
 import os
 
 # --- PAGE CONFIG ---
-st.set_page_config(page_title="PTA Analyzer", initial_sidebar_state="expanded")
+# Set layout to wide to utilize the full width of the screen
+st.set_page_config(page_title="Pro Trading Simulator", layout="wide", initial_sidebar_state="expanded")
 
 # --- CUSTOM CSS ---
 st.markdown("""
@@ -15,8 +16,14 @@ st.markdown("""
     .stMetric { background-color: #ffffff; padding: 15px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
     div[data-testid="stExpander"] { border: none !important; box-shadow: none !important; }
     .stDataFrame { background-color: #ffffff; border-radius: 10px; }
+    /* Ensure charts use full container width */
+    .plotly-graph-div { width: 100% !important; }
     </style>
     """, unsafe_allow_html=True)
+
+# --- CONSTANTS ---
+MONTH_ORDER = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+DAY_ORDER = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
 
 # --- DATA LOADING & CLEANING ---
 @st.cache_data
@@ -33,35 +40,30 @@ def load_and_clean_data():
         
     try:
         df = pd.read_csv(file_path)
-        # Normalize column names to uppercase
         df.columns = [str(c).strip().upper() for c in df.columns]
         
-        # Robust Date Parsing for UK format (Day first)
+        # Robust Date Parsing
         df['DATE'] = pd.to_datetime(df['DATE'], dayfirst=True, errors='coerce')
-        
-        # Remove records with missing core data
         df = df.dropna(subset=['DATE', 'PAIR', 'TIME'])
         
-        # Filter for the specific range
+        # Range validation (2024-2026)
         df = df[(df['DATE'].dt.year >= 2024) & (df['DATE'].dt.year <= 2026)]
         
         # Clean GROWTH %
         df['GROWTH %'] = pd.to_numeric(df['GROWTH %'], errors='coerce').fillna(0)
         
-        # String standardization
+        # String standardization using .str accessor to avoid Series errors
         str_cols = ['RESULT', 'PAIR', 'TYPE', 'LIVEORDEMO', 'STATUS', 'COMMENTS']
         for col in str_cols:
             if col in df.columns:
                 df[col] = df[col].fillna('N/A').astype(str).str.strip().str.upper()
         
-        # Standardize results
         if 'RESULT' in df.columns:
             df['RESULT'] = df['RESULT'].replace({
                 'WIN': 'WON', 'LOSS': 'LOST', 'BE': 'BREAKEVEN', 
                 'NAN': 'BREAKEVEN', '': 'BREAKEVEN', 'N/A': 'BREAKEVEN'
             })
         
-        # Status mapping
         if 'LIVEORDEMO' in df.columns:
             df['STATUS'] = df['LIVEORDEMO']
         elif 'STATUS' not in df.columns:
@@ -92,36 +94,25 @@ def run_simulation(data, start_capital, risk_per_trade_pct, compounding=False):
         trade_date = row['DATE']
         current_period = (trade_date.year, trade_date.month)
         
-        # --- MONTHLY RESET LOGIC ---
-        # Logic: Withdraw profits if above capital, carry over loss if below capital.
         if last_period is not None and current_period != last_period:
             if current_balance > start_capital:
-                profit_withdrawn = current_balance - start_capital
-                total_withdrawn += profit_withdrawn
+                profit = current_balance - start_capital
+                total_withdrawn += profit
                 current_balance = start_capital
-            
-            # Record the balance used to start the new month
             month_start_balance = current_balance
         
         last_period = current_period
         
-        # Risk amount calculation
-        # Per requirement: compounding off by default. Risk 1% of the 'basis'.
         basis = current_balance if compounding else start_capital
         risk_amount = basis * (risk_per_trade_pct / 100)
         
-        # Growth Application
         growth_val = row['GROWTH %']
         r_multiple = growth_val / 0.01 
         trade_pnl = risk_amount * r_multiple
         current_balance += trade_pnl
         
-        # DD logic: Assumption that DD is calculated based on defined starting capital
-        current_drawdown_pct = 0
-        current_drawdown_amt = 0
-        if current_balance < start_capital:
-            current_drawdown_amt = start_capital - current_balance
-            current_drawdown_pct = (current_drawdown_amt / start_capital) * 100
+        current_drawdown_amt = max(0, start_capital - current_balance)
+        current_drawdown_pct = (current_drawdown_amt / start_capital) * 100
         
         realized_wealth = current_balance + total_withdrawn
         monthly_growth_wealth = (current_balance - month_start_balance) + start_capital
@@ -140,7 +131,6 @@ def run_simulation(data, start_capital, risk_per_trade_pct, compounding=False):
             'Balance': current_balance,
             'Realized_Wealth': realized_wealth,
             'Monthly_Reset_Wealth': monthly_growth_wealth,
-            'Month_Start_Ref': month_start_balance,
             'Drawdown_Pct': current_drawdown_pct,
             'Drawdown_Amt': current_drawdown_amt,
             'Growth_Value': growth_val,
@@ -158,10 +148,8 @@ st.sidebar.title("🛠️ Settings")
 if not df.empty:
     with st.sidebar.expander("1. Global Filters", expanded=True):
         status_filter = st.radio("Account Mode", ["LIVE", "DEMO", "BOTH"], index=0)
-        
         available_years = sorted(df['YEAR'].unique())
         sel_years = st.multiselect("Select Years", options=available_years, default=available_years)
-        
         available_assets = sorted(df['PAIR'].unique())
         sel_assets = st.multiselect("Select Assets", options=available_assets, default=available_assets)
         
@@ -176,12 +164,12 @@ if not df.empty:
     with st.sidebar.expander("2. Risk & Capital", expanded=True):
         capital = st.number_input("Starting Capital ($)", value=100000, step=10000)
         risk = st.slider("Risk per Trade (%)", 0.1, 5.0, 1.0, 0.1)
-        compounding = st.toggle("Compound Results", value=False, help="Calculate risk based on current balance instead of initial capital.")
+        compounding = st.toggle("Compound Results (In-Month)", value=False)
 
     sim_data = filtered_df[filtered_df['TIME'].isin(times)].copy()
     
     st.title("📈 Surgical Pro Simulator")
-    st.info(f"💡 **Ruleset**: Profits withdrawn monthly. Losses carry over. Risk: {risk}% of {'Balance' if compounding else 'Initial Capital'}.")
+    st.info(f"💡 Profits withdrawn monthly. Risk: {risk}% of {'Balance' if compounding else 'Initial Capital'}.")
     
     results = run_simulation(sim_data, capital, risk, compounding)
     
@@ -203,25 +191,34 @@ if not df.empty:
         with tab1:
             st.plotly_chart(px.area(results, x='Date', y='Realized_Wealth', title='Total Realized Wealth Trend', color_discrete_sequence=['#00CC96']), use_container_width=True)
             
-            # Monthly Heatmap
+            # --- CHRONOLOGICAL MONTHLY HEATMAP ---
             monthly_pnl = results.groupby(['Year', 'Month'])['PnL'].sum().reset_index()
-            m_order = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-            monthly_pnl['Month'] = pd.Categorical(monthly_pnl['Month'], categories=m_order, ordered=True)
+            monthly_pnl['Month'] = pd.Categorical(monthly_pnl['Month'], categories=MONTH_ORDER, ordered=True)
             heatmap_data = monthly_pnl.pivot(index="Year", columns="Month", values="PnL").fillna(0)
-            st.plotly_chart(px.imshow(heatmap_data, text_auto='.0f', title="Monthly PnL Breakdown ($)", color_continuous_scale='RdYlGn'), use_container_width=True)
+            # Reindex to ensure Jan-Dec order
+            heatmap_data = heatmap_data.reindex(columns=MONTH_ORDER)
+            
+            st.plotly_chart(px.imshow(heatmap_data, text_auto='.0f', title="Monthly PnL Breakdown (Chronological Order)", color_continuous_scale='RdYlGn'), use_container_width=True)
 
         with tab2:
             c1, c2 = st.columns(2)
             with c1:
-                day_stats = results.groupby('Day')['PnL'].sum().reindex(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']).fillna(0)
-                st.plotly_chart(px.bar(day_stats, title="PnL by Day", color=day_stats.values, color_continuous_scale='Viridis'), use_container_width=True)
+                # --- ASSET-CATEGORIZED DAY ANALYSIS ---
+                day_pair_stats = results.groupby(['Day', 'Pair'])['PnL'].sum().reset_index()
+                day_pair_stats['Day'] = pd.Categorical(day_pair_stats['Day'], categories=DAY_ORDER, ordered=True)
+                day_pair_stats = day_pair_stats.sort_values('Day')
+                
+                fig_day = px.bar(day_pair_stats, x='Day', y='PnL', color='Pair', barmode='group',
+                               title="PnL by Day (Asset Comparison)", 
+                               color_discrete_sequence=px.colors.qualitative.Bold)
+                st.plotly_chart(fig_day, use_container_width=True)
+                
             with c2:
                 pair_stats = results.groupby('Pair')['PnL'].sum()
-                st.plotly_chart(px.pie(values=pair_stats.values, names=pair_stats.index, title="Profit by Asset"), use_container_width=True)
+                st.plotly_chart(px.pie(values=pair_stats.values, names=pair_stats.index, title="Profit Distribution by Asset"), use_container_width=True)
 
         with tab3:
             st.subheader("📜 Historical Trade Log")
-            
             display_mode = st.radio("Wealth Tracking Mode", ["Cumulative (Realized)", "Monthly Reset"], horizontal=True)
             wealth_col = "Realized_Wealth" if "Cumulative" in display_mode else "Monthly_Reset_Wealth"
             wealth_lbl = "Total Wealth ($)" if "Cumulative" in display_mode else "Monthly Progress ($)"
@@ -233,7 +230,7 @@ if not df.empty:
             if not show_all:
                 sel_y = l_col2.selectbox("Year", options=sorted(log_display['Year'].unique(), reverse=True))
                 log_display = log_display[log_display['Year'] == sel_y]
-                sel_m = l_col3.multiselect("Months", options=m_order, default=log_display['Month'].unique())
+                sel_m = l_col3.multiselect("Months", options=MONTH_ORDER, default=log_display['Month'].unique())
                 if sel_m: log_display = log_display[log_display['Month'].isin(sel_m)]
 
             st.dataframe(
@@ -251,8 +248,6 @@ if not df.empty:
 
         with tab4:
             st.subheader("📉 Drawdown & Risk Stats")
-            
-            # Month selection for drawdown drill-down
             dd_months = results[['Year', 'Month']].drop_duplicates().sort_values(['Year', 'Month'])
             dd_months['Label'] = dd_months['Month'].astype(str) + " " + dd_months['Year'].astype(str)
             selected_dd_period = st.selectbox("Select Period for Daily Drawdown Detail", options=["Entire Filtered History"] + list(dd_months['Label']))
@@ -263,33 +258,12 @@ if not df.empty:
             else:
                 dd_subset = results.copy()
 
-            # Loss Streaks (calculated on global results)
-            results['is_loss'] = results['Result'] == 'LOST'
-            results['streak_id'] = (results['is_loss'] != results['is_loss'].shift()).cumsum()
-            results['streak_count'] = results.groupby('streak_id')['is_loss'].cumsum()
-            max_consecutive_losses = results[results['is_loss']]['streak_count'].max() if any(results['is_loss']) else 0
-            
-            # Daily performance
-            daily_stats = dd_subset.groupby('Date')[['PnL', 'Drawdown_Amt', 'Drawdown_Pct']].agg({'PnL': 'sum', 'Drawdown_Amt': 'max', 'Drawdown_Pct': 'max'}).reset_index()
-            
-            d1, d2, d3, d4 = st.columns(4)
-            d1.metric("Max Loss Streak", f"{max_consecutive_losses} Trades")
-            d2.metric("Max Drawdown (%)", f"{dd_subset['Drawdown_Pct'].max():.2f}%")
-            d3.metric("Max Drawdown ($)", f"${dd_subset['Drawdown_Amt'].max():,.2f}")
-            
-            # Daily performance aggregation
-            daily_sum_pnl = results.groupby('Date')['PnL'].sum().reset_index()
-            daily_sum_pnl['Peak'] = daily_sum_pnl['PnL'].cumsum().cummax()
-            daily_sum_pnl['Daily_Drawdown'] = daily_sum_pnl['Peak'] - daily_sum_pnl['PnL'].cumsum()
-            d4.metric("Worst Daily Drop ($)", f"${daily_sum_pnl['Daily_Drawdown'].max():,.2f}")
-            
             # Enhanced Chart with Threshold lines
             fig_dd_curve = px.line(dd_subset, x='Date', y='Drawdown_Pct', 
                                    title=f'Drawdown Trend: {selected_dd_period} (%)', 
                                    color_discrete_sequence=['#EF553B'],
                                    hover_data={'Drawdown_Amt': ':$,.2f', 'Drawdown_Pct': ':.2f%'})
             
-            # Add horizontal lines for 5% and 10%
             fig_dd_curve.add_hline(y=5.0, line_dash="dash", line_color="orange", annotation_text="5% Threshold", annotation_position="top left")
             fig_dd_curve.add_hline(y=10.0, line_dash="dash", line_color="red", annotation_text="10% Threshold", annotation_position="top left")
             
@@ -297,6 +271,7 @@ if not df.empty:
             st.plotly_chart(fig_dd_curve, use_container_width=True)
             
             st.write("### 📅 Daily Performance Breakdown")
+            daily_stats = dd_subset.groupby('Date')[['PnL', 'Drawdown_Amt', 'Drawdown_Pct']].agg({'PnL': 'sum', 'Drawdown_Amt': 'max', 'Drawdown_Pct': 'max'}).reset_index()
             st.dataframe(
                 daily_stats.sort_values('Date', ascending=False),
                 column_config={
