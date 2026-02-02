@@ -27,3 +27,6 @@ venv/
 
 # MacOS
 .DS_Store
+
+# Dir
+res/
